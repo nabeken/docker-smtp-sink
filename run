@@ -1,0 +1,11 @@
+#!/bin/sh
+if [ "$1" = "smtp-source" ]; then
+  shift
+  if [ -n "${SINK_PORT_10025_TCP_ADDR}" ]; then
+    exec /usr/sbin/smtp-source "$@" "${SINK_PORT_10025_TCP_ADDR}:${SINK_PORT_10025_TCP_PORT}"
+  fi
+  exec /usr/sbin/smtp-source "$@"
+fi
+
+/usr/sbin/smtp-sink "$@" &
+wait
