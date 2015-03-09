@@ -6,7 +6,7 @@ RUN apt-get update && \
     curl \
     time \
     postfix && \
-  apt-get clean autoclean && \
+  apt-get clean && \
   apt-get autoremove -y && \
   rm -rf /var/lib/{apt,dpkg,cache,log}/
 
