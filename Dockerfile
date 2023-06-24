@@ -1,4 +1,4 @@
-FROM debian:10
+FROM debian:12
 MAINTAINER TANABE Ken-ichi <nabeken@tknetworks.org>
 
 RUN apt-get update && \
