@@ -1,5 +1,4 @@
 FROM debian:12
-MAINTAINER TANABE Ken-ichi <nabeken@tknetworks.org>
 
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -yq \

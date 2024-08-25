@@ -1,0 +1,18 @@
+services:
+  rsync:
+    image: ghcr.io/nabeken/docker-volume-container-rsync:latest
+    volumes:
+      - vol:/docker
+    ports:
+      - "10873:873"
+
+  sink:
+    image: ghcr.io/nabeken/docker-smtp-sink:action-local-test
+    volumes:
+      - vol:/sink
+    ports:
+      - "10025:10025"
+    command: ["-v", "-h", "mx.example.com", "-m", "100", "-d", "/sink/", ":10025", "100"]
+
+volumes:
+  vol:
