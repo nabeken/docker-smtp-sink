@@ -15,7 +15,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["digest"],
-      "matchManagers": ["dockerfile"],
+      "matchManagers": ["dockerfile", "docker-compose"],
       "matchPackageNames": [
         "/^debian$/",
         "/^ghcr.io/nabeken/docker-volume-container-rsync$/"
