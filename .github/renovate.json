@@ -17,7 +17,8 @@
       "matchUpdateTypes": ["digest"],
       "matchManagers": ["dockerfile"],
       "matchPackageNames": [
-        "/^debian$/"
+        "/^debian$/",
+        "/^ghcr.io/nabeken/docker-volume-container-rsync$/"
       ],
       "automerge": true
     }
