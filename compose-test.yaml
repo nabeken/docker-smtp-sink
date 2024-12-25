@@ -1,6 +1,6 @@
 services:
   rsync:
-    image: ghcr.io/nabeken/docker-volume-container-rsync:latest@sha256:6f5c18c1d0ff5aa7762a9b9e667edb33c81f0e486dc83e28a64ceeb2359b824e
+    image: ghcr.io/nabeken/docker-volume-container-rsync:latest@sha256:ea4d5865be228ce029c480484df36780d9fb6f95960091192f47734892236283
     volumes:
       - vol:/docker
     ports:
