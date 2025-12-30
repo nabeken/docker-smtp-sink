@@ -1,4 +1,4 @@
-FROM debian:13@sha256:0d01188e8dd0ac63bf155900fad49279131a876a1ea7fac917c62e87ccb2732d
+FROM debian:13@sha256:ea3a08b77d2d4403b17a88ede837ae147d053c971d09a278749792336c5a7606
 
 RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -yq \
